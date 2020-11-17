@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (  
     <header>
-        <h3 class="Title">Mitchell Hudson copyright 2019</h3>
+        <h3 class="Title">Mitchell Hudson copyright {new Date().getFullYear()}</h3>
     </header>
     )
 }
