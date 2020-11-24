@@ -8,7 +8,6 @@ import About from './components/About/About';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails';
 
 
-
 function App() {
   return (
     <Router>

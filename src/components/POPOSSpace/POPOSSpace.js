@@ -1,7 +1,7 @@
 import React from 'react';
 import './POPOSSpace.css';
 import { Link } from 'react-router-dom'
-
+import LikeButton from './LikeButton'
 
 
 function POPOSSpace(props) {
@@ -10,7 +10,7 @@ function POPOSSpace(props) {
         <div className="POPOSSpace">
 
           <Link to={`/details/${id}`}>
-          <img src={`${process.env.PUBLIC_URL}images/${image}`} width="300" height="300" alt="Hello" />
+          <img src={`${process.env.PUBLIC_URL}images/${image}`} width="100%" height="400" alt="Hello" />
           </Link>
 
           <Link className="POPOSSpace-title" to={`/details/${id}`}>
@@ -20,7 +20,10 @@ function POPOSSpace(props) {
           <div className="POPOSSpace-info">
                 <div >{address}</div>
                 <div>{hours}</div>
+            <br></br>
+            <LikeButton test='1' />
             </div>
+
         </div>
       )
 }

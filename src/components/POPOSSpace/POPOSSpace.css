@@ -1,13 +1,14 @@
 .POPOSSpace {
     width: 100%;
     text-align: center;
-    /* position: relative; */
+    position: relative;
 
   }
   
 .POPOSSpace > img {
     width: 100%;
     height: auto;
+    position: relative;
   }
 
 .hours {
@@ -16,9 +17,10 @@
 
 .POPOSSpace .POPOSSpace-title {
   display: block;
-  /* position: absolute; */
+  position: absolute;
   left: 0;
   top: 0;
+  text-decoration: none;
 }
 
 .POPOSSpace h1 {
@@ -27,17 +29,27 @@
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.5rem;
   text-align: left;
+
 }
 
 .POPOSSpace .POPOSSpace-info {
-  /* position: absolute; */
+  position: absolute;
   right: 0;
   bottom: 0;
   text-align: right;
 } 
 
+
 .POPOSSpace .POPOSSpace-info div {
   display: inline-block;
   padding: 0.25em 0.5em;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.POPOSSpace .POPOSSpace-info .LikeButton {
+  /* font-size: large; */
+  background-color: rgba(170, 165, 165, 0.9);
+  color: aliceblue;
+  text-align: center;
 }
