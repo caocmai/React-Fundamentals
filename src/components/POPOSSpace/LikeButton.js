@@ -15,8 +15,8 @@ class LikeButton extends Component {
 
   render() {
     return (
-      <div className="LikeButton" >
-        <p >{this.state.count}</p>
+      <div className="LikeButtonSection">
+        <h4 className="LikeButton"  >{this.state.count}</h4>
 
         <button onClick={(e) => {
           this.increment()

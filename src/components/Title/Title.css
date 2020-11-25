@@ -26,3 +26,14 @@
     color: #fff;
     border-bottom: 2px solid;
   }
+
+  .Footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    background-color: rgb(192, 45, 26);
+    color: #fff;
+    margin: 0;
+  }

@@ -49,7 +49,15 @@
 
 .POPOSSpace .POPOSSpace-info .LikeButton {
   /* font-size: large; */
-  background-color: rgba(170, 165, 165, 0.9);
+  background-color: rgba(216, 46, 46, 0.9);
   color: aliceblue;
   text-align: center;
+  margin: 2px;
+  padding: 10px 5px;
+  border-radius: 15%;
+
+}
+
+.POPOSSpace .POPOSSpace-info .LikeButtonSection {
+  background-color: rgba(170, 165, 165, 0);
 }
