@@ -21,7 +21,7 @@ function POPOSSpace(props) {
                 <div >{address}</div>
                 <div>{hours}</div>
             <br></br>
-            <LikeButton test='1' />
+            <LikeButton count='1'/>
             </div>
 
         </div>

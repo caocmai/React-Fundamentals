@@ -1,3 +1,8 @@
+:root {
+  --bg-color: white;
+  --fg-color: rgb(62, 199, 62);
+}
+
 .POPOSSpace {
     width: 100%;
     text-align: center;
@@ -47,17 +52,33 @@
 }
 
 
-.POPOSSpace .POPOSSpace-info .LikeButton {
+.POPOSSpace .POPOSSpace-info .LikeButtonCount {
   /* font-size: large; */
   background-color: rgba(216, 46, 46, 0.9);
   color: aliceblue;
   text-align: center;
   margin: 2px;
-  padding: 10px 5px;
+  padding: 2px;
   border-radius: 15%;
 
 }
 
 .POPOSSpace .POPOSSpace-info .LikeButtonSection {
   background-color: rgba(170, 165, 165, 0);
+}
+
+.likeButton {
+  padding: 0.5em 0.75em;
+  background-color: var(--bg-color);
+  border: 1px solid;
+  color: var(--fg-color);
+  border-radius: 0.5em;
+  font-size: var(--base-font-size);
+  transition: 200ms;
+
+}
+
+.likeButton:hover {
+  background-color: var(--fg-color);
+  color: var(--bg-color);
 }

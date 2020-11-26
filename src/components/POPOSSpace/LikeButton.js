@@ -10,15 +10,15 @@ class LikeButton extends Component {
   }
 
   increment() {
-    this.setState({ count: this.state.count + parseInt(this.props.test) })
+    this.setState({ count: this.state.count + parseInt(this.props.count) })
   }
 
   render() {
     return (
       <div className="LikeButtonSection">
-        <h4 className="LikeButton"  >{this.state.count}</h4>
+        <h4 className="LikeButtonCount"  >{this.state.count}</h4>
 
-        <button onClick={(e) => {
+        <button className='likeButton' onClick={(e) => {
           this.increment()
         }}>Like</button>
 
