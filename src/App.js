@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import About from './components/About/About';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails';
+import Calculator from './components/Calculator/Calculator';
 
 
 function App() {
