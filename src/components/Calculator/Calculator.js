@@ -1,5 +1,12 @@
 import react, { Component, useState } from 'react'
 
+// Building a Calculator using React with either hooks or class
+// Uncomment on or the other to test it out, and not both!
+
+///////////////////////////////////////////
+//            USING CLASS               //
+/////////////////////////////////////////
+
 // export default class Calculator extends Component {
 //     constructor(props) {
 //         super(props)
@@ -12,18 +19,16 @@ import react, { Component, useState } from 'react'
 //     }
 
 //     render() {
-
-
 //         this.state.total = this.state.bill * (this.state.tip/100) / this.state.split
 
 //         return (
 //             <div>
 
-//                 <h1>Tip Calculator</h1>
-//                 <h2>Total: ${ (this.state.total).toFixed(2) }</h2>
+//                 <h1>(CLASS) Tip Calculator</h1>
+//                 <h2>Total Per Person: ${ (this.state.total).toFixed(2) }</h2>
 
 //                 <label>
-//                     Bill 
+//                     Bill $
 //                     <input type="number"
 //                         value={this.state.bill}
 //                         onChange={ (e) => { this.setState({ bill: e.target.value })}}
@@ -50,9 +55,14 @@ import react, { Component, useState } from 'react'
 
 //             </div>
 //         )
-
 //     }
+
 // }
+
+
+/////////////////////////////////////////
+//    USING HOOKS                     //
+///////////////////////////////////////
 
 export default function Calculator () {
     const [ tip, setTip ] = useState(14)
@@ -62,8 +72,8 @@ export default function Calculator () {
 
     return (
         <div>
-            <h1>Total Per Party: ${total.toFixed(2)}</h1>
-            <h2>Bill Total: ${ (bill * (1 + tip/100)).toFixed(2) }</h2>
+            <h1>(HOOKS) Bill Total: ${ (bill * (1 + tip/100)).toFixed(2) }</h1>
+            <h2>Total Per Person: ${total.toFixed(2)}</h2>
             <label>
                 Bill: ${bill}
                 <input 
