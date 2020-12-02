@@ -78,7 +78,7 @@ export default class Calculator extends Component {
 
 //     return (
 //         <div>
-//             <h1>(HOOKS) Bill Total: ${ (bill * (1 + tip/100)).toFixed(2) }</h1>
+//             <h1>(HOOKS) Tip Calculator Bill Total: ${ (bill * (1 + tip/100)).toFixed(2) }</h1>
 //             <h2>Total Per Person: ${total.toFixed(2)}</h2>
 //             <label>
 //                 Bill: ${bill}
