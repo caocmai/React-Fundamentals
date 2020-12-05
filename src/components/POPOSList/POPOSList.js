@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import POPOSSpace from "../POPOSSpace/POPOSSpace";
 import "./POPOSList.css";
 import data from "../../sfpopos-data.json";
-import Calculator from "../Calculator/Calculator";
+import TipCalculator from "../Calculator/TipCalculator";
 
 function POPOSList() {
   const [ query, setQuery ] = useState('')
@@ -37,7 +37,7 @@ function POPOSList() {
                 <button type="submit">Submit</button>
             </form>
             {spaces}
-      <Calculator />
+      <TipCalculator />
     </div>
     )
 }

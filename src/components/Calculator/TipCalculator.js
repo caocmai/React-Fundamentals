@@ -1,14 +1,16 @@
 import react, { Component, useState } from 'react'
-import './Calculator.css'
+import './TipCalculator.css'
+import API from '../API/API'
 
-// Building a Calculator using React with either hooks or class
-// Uncomment on or the other to test it out, and not both!
+
+// Building a Tip Calculator using React with either hooks or class
+// Uncomment one or the other to test it out, and not both!
 
 ///////////////////////////////////////////
 //            USING CLASS               //
 /////////////////////////////////////////
 
-export default class Calculator extends Component {
+export default class TipCalculator extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -16,8 +18,31 @@ export default class Calculator extends Component {
             tip: 20,
             split: 1, 
             total: 0,
+            answer: '',
         }
+        
     }
+
+    // state = { answer: '' }
+    handleSubmit = (event) => {
+        this.setState({ answer: event.target.name });
+        // setTimeout(() => { this.setState({ answer: '' }) }, 2000);
+
+    }
+
+    // componentDidUpdate(prevProps, prevState) {
+    //     if (this.state.answer === 'yes'  && prevState.answer != '') {
+    //         this.setState({ answer: '' })
+    //     }
+    // }
+
+    // saveChanges = () => {
+    //     ..
+    //     this.setState({ showSnackbar: true, message: 'Saved successfully' }, () => {
+    //       setTimeout(() => { this.setState({ showSnackbar: false }) }, 2000);
+    //     })
+    //   };
+    
 
     render() {
         this.state.total = (this.state.bill * (1 + (this.state.tip/100)))/ this.state.split
@@ -54,10 +79,15 @@ export default class Calculator extends Component {
                     People
                 </label>
 
+                <div>
+        {/* {this.state.answer === "yes" && <API data={this.state}/>} */}
+        {/* <button onClick={this.handleSubmit} name="yes">Search</button>
+        <button onClick={this.handleSubmit} name="no">Clear</button> */}
+      </div>
+
             </div>
         )
     }
-
 }
 
 
@@ -65,7 +95,7 @@ export default class Calculator extends Component {
 //    USING HOOKS                     //
 ///////////////////////////////////////
 
-// export default function Calculator () {
+// export default function TipCalculator () {
 //     const [ tip, setTip ] = useState(20)
 //     let [ bill, setBill ] = useState()
 //     const [ partyOf, setPartyOf ] = useState(1)

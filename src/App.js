@@ -6,8 +6,7 @@ import Footer from './components/Footer/Footer';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import About from './components/About/About';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails';
-import Calculator from './components/Calculator/Calculator';
-
+import API from './components/API/API'
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
         <Route path="/details/:id" component={POPOSDetails} />
         <Route path="/about" component={About} />
         <Footer />
+        {/* <API /> */}
       </div>
     </Router>
   );
